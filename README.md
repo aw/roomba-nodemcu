@@ -2,6 +2,8 @@
 
 This library can be used to send control commands to a Roomba using the NodeMCU (ESP8266).
 
+![roomba-nodemcu-esp8266](https://user-images.githubusercontent.com/153401/28676548-74c24818-72da-11e7-8d8b-59fa7309dacf.jpg)
+
 # Status
 
 Still in early development...
