@@ -8,6 +8,23 @@ This library can be used to send control commands to a Roomba using the NodeMCU 
 
 Still in early development...
 
+# Getting started
+
+Edit `init.lua` with your Roomba code, then type `make all` to upload everything to your NodeMCU.
+
+# Platform config
+
+Tested on NodeMCU v2, with the following build parameters:
+
+```
+NodeMCU custom build by frightanic.com
+branch: 1.5.4.1-final
+SSL: true
+modules: bit,cjson,crypto,dht,file,gpio,i2c,mqtt,net,node,pwm,rtcmem,rtctime,sntp,spi,tmr,u8g,uart,ucg,websocket,wifi,tls
+```
+
+Firmware built using [NodeMCU Build](https://nodemcu-build.com/)
+
 # Todo
 
 * [ ] Obtain data from sensors

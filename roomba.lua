@@ -8,7 +8,7 @@
 local gpio_dd = 6 -- device detect pin used to wake-up Roomba
 local uart_id = 0
 
-local OPCODES = {
+OPCODES = {
     start = 128,
      baud = 129,  -- + 1 byte
   control = 130,
@@ -67,15 +67,7 @@ end
 
 roomba_setup()
 
-dofile("roomba-drive.lua")
-dofile("roomba-leds.lua")
-dofile("roomba-motors.lua")
-dofile("roomba-song.lua")
-
-local function drive_clockwise_example()
-  roomba_write(OPCODES.start) -- start
-  roomba_write(OPCODES.control) -- control
-  roomba_write(OPCODES.drive, drive_bytes(200, DRIVE.clockwise)) -- spin
-end
-
-drive_clockwise_example()
+dofile("roomba-drive.lc")
+dofile("roomba-leds.lc")
+dofile("roomba-motors.lc")
+dofile("roomba-song.lc")
